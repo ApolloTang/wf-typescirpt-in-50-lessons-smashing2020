@@ -1,4 +1,5 @@
-//@ts-check
+//@ts-check 
+//^^^^^^^^^ add this line to get tsc to check javascript file.
 
 const storage = {
   max: undefined,

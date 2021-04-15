@@ -5,12 +5,9 @@ const storage = {
   items: [],
 };
 
+
 Object.defineProperty(
-  storage, "max", { readonly: true, val: 5000 });
-  //                ^^^^^^^^^^^^^^^^^^^^^^^^^
-  //  Argument of type '{ readonly: boolean; val: number; }' is
-  //  not assignable to parameter of type 'PropertyDescriptor
-  //  & ThisType<any>'
+  storage, "max", { writable: true, value: 5000 });
 
 let currentStorage = "undefined";
 
